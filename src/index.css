@@ -5,9 +5,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  background-color: #120d37;
+  background-image: linear-gradient(0deg, #120d37 40%, #e197dada 100%);
+  background-repeat: no-repeat;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.navbor {
+  background-color: #120d37;
+  background-image: linear-gradient(0deg, #120d37 0%, #e197da 100%);
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #120d37;
+  background-image: linear-gradient(0deg, #120d37 0%, #c389f1be 50%);
+  background-repeat: no-repeat;
+}
+
+.main {
+  min-height: calc(100vh - 64px - 26.99px);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+  column-gap: 20px;
+}
+
+.card-img {
+  height: 350px;
+}
+
+.type-radio {
+  color: black;
+}
+
+.type-radio + .type-radio {
+  margin-left: 15px;
+}
+
+.loader {
+  min-height: calc(100vh - 64px - 26.99px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
