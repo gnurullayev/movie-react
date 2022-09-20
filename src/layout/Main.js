@@ -21,7 +21,7 @@ export default class  Main extends React.Component {
 
     filteredFetching = (title, type = "movie") => {
         this.setState({ loading: true})
-        fetch(`http://www.omdbapi.com/?apikey=a75504ec&s=${title}&type=${type === "all" ? "" : type}`)
+        fetch(`https://www.omdbapi.com/?apikey=a75504ec&s=${title}&type=${type === "all" ? "" : type}`)
         .then(res => res.json())
         .then(data => this.setState({movies:data.Search, loading: false}))
     }
