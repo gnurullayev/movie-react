@@ -10,7 +10,7 @@ export default class  Main extends React.Component {
     }
 
     componentDidMount () {
-        fetch("http://www.omdbapi.com/?apikey=a75504ec&s=iron")
+        fetch("https://www.omdbapi.com/?apikey=a75504ec&s=iron")
         .then(res => res.json())
         .then(data => this.setState({movies:data.Search, loading: false}))
     }
